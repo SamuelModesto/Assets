@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "9b6e1e88-2a63-49fb-9880-80ae1fd940d0",
+		"name": "Budgi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11462615"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "myAppSecret123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "myAppName123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "samuka",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8089/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"oauth",
+						"token"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "samuka",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
